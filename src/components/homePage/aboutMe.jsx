@@ -5,7 +5,7 @@ import ProfessionalExperience from './professionalExperience';
 
 export default function AboutMe(){
     return(
-        <div style={{backgroundColor:"#93C9F9", padding:"1em", minWidth:"25em"}}>
+        <div style={{backgroundColor:"#93C9F9", padding:"1%", minWidth:"20em"}}>
             <Introduction />
             <br/>
             <AcademicsExperience />
