@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom';
 
 export default function MyNavBar(){
     return(
-        <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{minWidth:"25em"}}>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{minWidth:"20em"}}>
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">Stephen Gruver</Link>
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
