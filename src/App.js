@@ -3,7 +3,7 @@ import {useSelector, useDispatch} from 'react-redux';
 import {increment, decrement} from './actions';
 import { isDesktop} from 'react-device-detect';
 import MyNavBar from './components/myNavBar';
-import {BrowserRouter, Redirect, Switch, Route, Link} from 'react-router-dom';
+import {HashRouter, Redirect, Switch, Route, Link} from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import AboutMe from './components/homePage/aboutMe';
 
@@ -15,7 +15,7 @@ function App() {
   const dispatch = useDispatch();
   return (
     <div className="App" style={{paddingLeft:isDesktop?"15%":"0%", paddingRight:isDesktop?"15%":"0%", backgroundColor:"#0863B2"}}>
-      <BrowserRouter>
+      <HashRouter>
         <MyNavBar/>
         {/* <h1>Counter: {counter}</h1>
         <button onClick={() => dispatch(increment(1))}>+</button>
@@ -30,7 +30,7 @@ function App() {
           {/*<Route path="/sad" render={() => <Redirect to="/message/Turn%20That%20Frown%20Upside%20Down!"/>} />*/} {/*Redirect component*/}
           <Route path="/" render={() => <h2>Oopsie! Invalid page</h2>}/> {/*default route*/}
         </Switch>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
