@@ -7,7 +7,9 @@ export default function AboutMe(){
     return(
         <div style={{backgroundColor:"#93C9F9", padding:"1em", minWidth:"25em"}}>
             <Introduction />
+            <br/>
             <AcademicsExperience />
+            <br/>
             <ProfessionalExperience />
         </div>
     )

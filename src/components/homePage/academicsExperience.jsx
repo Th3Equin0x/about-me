@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function AcademicsExperience(){
     return (
-        <div className="card" style={{textAlign:"left", margin:"1em", padding:"1em", minWidth:"20em"}}>
+        <div className="card" style={{textAlign:"left", padding:"1em", minWidth:"20em"}}>
             <h2 className="card-title" style={{textAlign:"left"}}>Education</h2>
             <div className="card-body">
                 <span style={{display:"flex", justifyContent:"space-between"}}>
