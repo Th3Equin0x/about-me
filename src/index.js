@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import {createStore} from 'redux';
 import allReducers from './reducers';
 import {Provider} from 'react-redux';
+import { HashRouter } from 'react-router-dom';
 
 const store = createStore(
   allReducers,
@@ -14,9 +15,11 @@ const store = createStore(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={store}>
-      <App />
-    </Provider>
+    <HashRouter>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </HashRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );
