@@ -6,6 +6,7 @@ import MyNavBar from './components/myNavBar';
 import {Switch, Route} from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import AboutMe from './components/homePage/aboutMe';
+import ContactMe from './components/contactMe/contactMe';
 
 export const appHistory = createBrowserHistory();
 
@@ -23,7 +24,7 @@ function App() {
 
       <Switch> {/*forces the router to only render the first route that matches the path*/}
         <Route exact path="/" render={() => <AboutMe/>} />
-        <Route exact path="/contact" render={() => <h1>Contact me!</h1>} />
+        <Route exact path="/contact" render={() => <ContactMe/>} />
         {/* <Route path="/endpoint" render={() => <DemoEndpoint></DemoEndpoint>} /> */}
         {/* <Route path="/message/:msgVar/:optionalVar?" render={(props) => <RouteParams params={props}/>} />*/} {/*required param and optional param */}
         {/*<Route path="/sad" render={() => <Redirect to="/message/Turn%20That%20Frown%20Upside%20Down!"/>} />*/} {/*Redirect component*/}
