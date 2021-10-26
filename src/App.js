@@ -1,5 +1,5 @@
 import './App.css';
-import {useSelector, useDispatch} from 'react-redux';
+// import {useSelector, useDispatch} from 'react-redux';
 // import {increment, decrement} from './actions';
 import { isDesktop} from 'react-device-detect';
 import MyNavBar from './components/myNavBar';
@@ -11,9 +11,9 @@ import ContactMe from './components/contactMe/contactMe';
 export const appHistory = createBrowserHistory();
 
 function App() {
-  const counter = useSelector(state => state.counter);
+  // const counter = useSelector(state => state.counter);
   // const isLogged = useSelector(state => state.isLogged);
-  const dispatch = useDispatch();
+  // const dispatch = useDispatch();
   return (
     <div className="App" style={{paddingLeft:isDesktop?"15%":"0%", paddingRight:isDesktop?"15%":"0%", backgroundColor:"#0863B2"}}>
       <MyNavBar/>

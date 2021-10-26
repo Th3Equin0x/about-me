@@ -1,9 +1,9 @@
 import counterReducer from './counter';
-//import loggedReducer from './isLogged';
+import activeTabReducer from './activeTab';
 import {combineReducers} from 'redux';
 
 const allReducers = combineReducers({
     counter: counterReducer,
-//    logged: loggedReducer
+    activeTab: activeTabReducer
 })
 export default allReducers;

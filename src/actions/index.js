@@ -10,3 +10,9 @@ export const decrement = (value = 1) => {
         payload: value
     }
 }
+export const updateTab = (value = "home") => {
+    return{
+        type: 'TAB',
+        payload: value
+    }
+}
